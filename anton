@@ -1,0 +1,46 @@
+
+#include <string>
+#include <iostream>
+
+using namespace std;
+
+
+int main() {
+	int an=0,da=0,games;
+	string s;
+
+	cin>>games;
+	cin>>s;
+
+	for(int i=0;i<games;i++){
+		char in= s[i];
+	 	char a ='A';
+		char d ='D';
+		
+		if(in==a){
+        an++;
+		}
+		else if(in==d){
+			da++;
+		}
+
+	}
+	if(an>da){
+		cout<<"Anton"<<endl;
+	}
+	else if(an<da){
+		cout<<"Danic"<<endl;
+	}
+	else{
+	cout<<"Friendship"<<endl;
+	}
+
+
+
+
+
+
+
+    return 0;
+}
+
